@@ -19,11 +19,15 @@ Keep in mind that we recommend you code along with us and use this only if you e
 ## Docker
 
 1. Ensure you have the latest version of Docker installed
-2. Run `docker build -t nasa-project .`
-3. Run `docker run -it -p 8000:8000 nasa-project`
+2. `docker build . -t vishalcodz/nasa-project`
+3. `docker run -p 8000:8000 vishalcodz/nasa-project`
+4. `docker push vishalcodz/nasa-project`
+5. Run `docker build -t nasa-project .`
+6. Run `docker run -it -p 8000:8000 nasa-project`
 
 ## Running the Tests
 
-To run any automated tests, run `npm test`. This will: 
-* Run all the client-side tests: `npm test --prefix client`
-* Run all the server-side tests: `npm test --prefix server` 
+To run any automated tests, run `npm test`. This will:
+
+- Run all the client-side tests: `npm test --prefix client`
+- Run all the server-side tests: `npm test --prefix server`
